@@ -5,27 +5,179 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Christmas Wishlist | Lista de Navidad</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#fffaf2;color:#29332e}
-header{background:#174b3b;color:white;text-align:center;padding:50px 20px}
-header h1{font-family:Georgia,serif;font-size:38px}
-header p{color:#f1dfb9}
-.languages{margin-top:22px}
-.languages button{border:2px solid white;border-radius:20px;padding:10px 22px;margin:5px;cursor:pointer;font-weight:bold;background:transparent;color:white}
-.languages button.active{background:#e3bd70;color:#174b3b;border-color:#e3bd70}
-main{max-width:1100px;margin:auto;padding:35px 20px}
-.intro{text-align:center;margin-bottom:30px}
-.intro h2{color:#174b3b}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
-.card{background:white;border-radius:14px;overflow:hidden;border:1px solid #eadfce;box-shadow:0 5px 15px #0000000d}
-.card img,.placeholder{width:100%;height:200px;object-fit:contain;background:#f5efe5;padding:10px}
-.placeholder{display:grid;place-items:center;font-size:65px}
-.content{padding:20px}
-h3{color:#174b3b}
-.price{color:#a8323e;font-size:23px;font-weight:bold}
-.note{color:#777;font-size:12px}
-.card a{display:block;text-align:center;padding:12px;background:#a8323e;color:white;text-decoration:none;border-radius:7px;margin-top:15px}
-footer{background:#174b3b;color:white;text-align:center;padding:25px;margin-top:30px}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #29332e;
+}
+
+/* CHRISTMAS GIF HEADER */
+header {
+  background-color: #174b3b;
+  background-image:
+    linear-gradient(rgba(23, 75, 59, 0.60), rgba(23, 75, 59, 0.60)),
+    url("https://media.giphy.com/media/3o6fJ1UDfEBc9BcPss/giphy.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-family: Georgia, serif;
+  font-size: 38px;
+}
+
+header p {
+  color: #f1dfb9;
+}
+
+.languages {
+  margin-top: 22px;
+}
+
+.languages button {
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px 22px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background: transparent;
+  color: white;
+  transition: 0.3s;
+}
+
+.languages button:hover {
+  background: white;
+  color: #174b3b;
+}
+
+.languages button.active {
+  background: #e3bd70;
+  color: #174b3b;
+  border-color: #e3bd70;
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 35px 20px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro h2 {
+  color: #174b3b;
+}
+
+/* PRODUCT GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+}
+
+/* PRODUCT CARDS */
+.card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #eadfce;
+  box-shadow: 0 5px 15px #0000000d;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px #00000018;
+}
+
+.card img,
+.placeholder {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background: white;
+  padding: 10px;
+}
+
+.placeholder {
+  display: grid;
+  place-items: center;
+  font-size: 65px;
+}
+
+.content {
+  padding: 20px;
+}
+
+h3 {
+  color: #174b3b;
+}
+
+.price {
+  color: #a8323e;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.note {
+  color: #777;
+  font-size: 12px;
+}
+
+/* SHOPPING BUTTONS */
+.card a {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  background: #a8323e;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background: #7f202d;
+}
+
+/* FOOTER */
+footer {
+  background: #174b3b;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  header {
+    padding: 35px 15px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  main {
+    padding: 25px 15px;
+  }
+}
 </style>
 </head>
 <body>
