@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christmas Wishlist | Lista de Navidad</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#fffaf2;color:#29332e}
+header{background:#174b3b;color:white;text-align:center;padding:50px 20px}
+header h1{font-family:Georgia,serif;font-size:38px}
+header p{color:#f1dfb9}
+.languages{margin-top:22px}
+.languages button{border:2px solid white;border-radius:20px;padding:10px 22px;margin:5px;cursor:pointer;font-weight:bold;background:transparent;color:white}
+.languages button.active{background:#e3bd70;color:#174b3b;border-color:#e3bd70}
+main{max-width:1100px;margin:auto;padding:35px 20px}
+.intro{text-align:center;margin-bottom:30px}
+.intro h2{color:#174b3b}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.card{background:white;border-radius:14px;overflow:hidden;border:1px solid #eadfce;box-shadow:0 5px 15px #0000000d}
+.card img,.placeholder{width:100%;height:200px;object-fit:contain;background:#f5efe5;padding:10px}
+.placeholder{display:grid;place-items:center;font-size:65px}
+.content{padding:20px}
+h3{color:#174b3b}
+.price{color:#a8323e;font-size:23px;font-weight:bold}
+.note{color:#777;font-size:12px}
+.card a{display:block;text-align:center;padding:12px;background:#a8323e;color:white;text-decoration:none;border-radius:7px;margin-top:15px}
+footer{background:#174b3b;color:white;text-align:center;padding:25px;margin-top:30px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🎄 <span data-en="My Christmas Wishlist" data-es="Mi Lista de Navidad">My Christmas Wishlist</span> 🎄</h1>
+<p data-en="Some things that would make my Christmas special!"
+data-es="¡Algunas cosas que harían mi Navidad especial!">
+Some things that would make my Christmas special!
+</p>
+
+<div class="languages">
+<button class="active" onclick="changeLanguage('en')" id="enBtn">🇺🇸 English</button>
+<button onclick="changeLanguage('es')" id="esBtn">🇪🇸 Español</button>
+</div>
+</header>
+
+<main>
+<div class="intro">
+<h2 data-en="Dear Santa... 🎁" data-es="Querido Santa... 🎁">Dear Santa... 🎁</h2>
+<p data-en="Thank you for checking out my wishlist!"
+data-es="¡Gracias por visitar mi lista de deseos!">
+Thank you for checking out my wishlist!
+</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://p2-ofp.static.pub/ShareResource/na/subseries/gallery/lenovo-yoga-pro-7i-gen-11-aura-edition-15-inch-intel-02.png" alt="Lenovo laptop">
+<div class="content">
+<h3>Lenovo Yoga Pro 7i Aura Edition</h3>
+<p class="price">$1,699.99</p>
+<p data-en="15.3-inch OLED, RTX 5050, 32GB RAM, 1TB SSD."
+data-es="Pantalla OLED de 15.3 pulgadas, RTX 5050, 32GB de RAM y 1TB SSD.">15.3-inch OLED, RTX 5050, 32GB RAM, 1TB SSD.</p>
+<p class="note" data-en="Price may change." data-es="El precio puede cambiar.">Price may change.</p>
+<a href="https://www.bestbuy.com/product/lenovo-yoga-pro-7i-aura-edition-15-3-3k-oled-laptop-core-ultra-7-356h-2026-nvidia-geforce-rtx-5050-32gb-memory-1tb-ssd-luna-grey/JJGH3RXHKJ/sku/6671627" target="_blank" data-en="View at Best Buy ↗" data-es="Ver en Best Buy ↗">View at Best Buy ↗</a>
+</div>
+</div>
+
+<div class="card">
+<div class="placeholder">🧸</div>
+<div class="content">
+<h3>Hot Toys COSBI Marvel Avengers: Doomsday Plush Keychain</h3>
+<p class="price">$34.99</p>
+<p data-en="Mystery collectible plush keychain."
+data-es="Llavero de peluche coleccionable sorpresa.">Mystery collectible plush keychain.</p>
+<p class="note" data-en="Price may change." data-es="El precio puede cambiar.">Price may change.</p>
+<a href="https://www.ebay.com/itm/820259388763?var=627070108436" target="_blank" data-en="View on eBay ↗" data-es="Ver en eBay ↗">View on eBay ↗</a>
+</div>
+</div>
+
+<div class="card">
+<div class="placeholder">🎁</div>
+<div class="content">
+<h3 data-en="Amazon Wishlist Item" data-es="Artículo de mi lista de Amazon">Amazon Wishlist Item</h3>
+<p class="price" data-en="Check listing" data-es="Consultar precio">Check listing</p>
+<p data-en="My third Amazon wishlist item."
+data-es="Mi tercer artículo de la lista de Amazon.">My third Amazon wishlist item.</p>
+<a href="https://www.amazon.com/gp/aw/d/B0GL1LKF95" target="_blank" data-en="View on Amazon ↗" data-es="Ver en Amazon ↗">View on Amazon ↗</a>
+</div>
+</div>
+
+<div class="card">
+<div class="placeholder">💵</div>
+<div class="content">
+<h3 data-en="Money" data-es="Dinero">Money</h3>
+<p class="price" data-en="Any amount" data-es="Cualquier cantidad">Any amount</p>
+<p data-en="A little spending money would be appreciated!"
+data-es="¡Agradecería un poco de dinero para gastar!">A little spending money would be appreciated!</p>
+</div>
+</div>
+
+<div class="card">
+<div class="placeholder">📱</div>
+<div class="content">
+<h3>RUWA iPhone 14 Pro Screen Protector</h3>
+<p class="price" data-en="Check listing" data-es="Consultar precio">Check listing</p>
+<p data-en="Tempered glass screen protector with installation kit."
+data-es="Protector de pantalla de vidrio templado con kit de instalación.">Tempered glass screen protector with installation kit.</p>
+<a href="https://www.amazon.com/ruwa-Protector-Tempered-Installation-Resistant/dp/B0BX921PGK" target="_blank" data-en="View on Amazon ↗" data-es="Ver en Amazon ↗">View on Amazon ↗</a>
+</div>
+</div>
+
+<div class="card">
+<div class="placeholder">🛡️</div>
+<div class="content">
+<h3>FNTCASE iPhone 14 Pro Case</h3>
+<p class="price" data-en="Check listing" data-es="Consultar precio">Check listing</p>
+<p data-en="Protective phone case."
+data-es="Funda protectora para el teléfono.">Protective phone case.</p>
+<a href="https://www.amazon.com/FNTCASE-iPhone-14-Pro-Case/dp/B0D49GT4QX" target="_blank" data-en="View on Amazon ↗" data-es="Ver en Amazon ↗">View on Amazon ↗</a>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<p data-en="Made with ❤️ and Christmas spirit!"
+data-es="¡Hecho con ❤️ y espíritu navideño!">Made with ❤️ and Christmas spirit!</p>
+<p data-en="Merry Christmas! 🎄"
+data-es="¡Feliz Navidad! 🎄">Merry Christmas! 🎄</p>
+</footer>
+
+<script>
+function changeLanguage(language){
+  document.documentElement.lang=language;
+  document.querySelectorAll('[data-en]').forEach(element=>{
+    element.textContent=element.dataset[language];
+  });
+  document.getElementById('enBtn').classList.toggle('active',language==='en');
+  document.getElementById('esBtn').classList.toggle('active',language==='es');
+}
+</script>
+
+</body>
+</html>
